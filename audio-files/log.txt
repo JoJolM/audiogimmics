@@ -1,0 +1,395 @@
+
+2019-07-12 11:11:56.164656 LOG: Request to play ocean-wave-1.wav
+2019-07-12 11:11:56.220700 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 11:12:18.239873 LOG: playing ocean-wave-1.wav
+2019-07-12 11:12:18.239912 LOG: blocking == True
+2019-07-12 11:12:18.240030 LOG: No timer requested, time elapsed = 0:22
+2019-07-12 11:12:18.240079 LOG:  playing ocean-wave-1.wav
+=======================================
+2019-07-12 11:11:56.164620 : > test_1 start <
+> test_1 fail <
+=======================================
+2019-07-12 11:12:50.849844 LOG: Request to play ocean-wave-1.wav
+2019-07-12 11:12:50.905212 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 11:13:12.924477 LOG: playing ocean-wave-1.wav
+2019-07-12 11:13:12.924517 LOG: blocking == True
+2019-07-12 11:13:12.924637 LOG: No timer requested, time elapsed = 0:22
+2019-07-12 11:13:12.924693 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-12 11:12:50.849810 : > test_1 start <
+2019-07-12 11:13:12.925268 : > test_1 success <
+=======================================
+2019-07-12 15:26:59.317221 : > test_1 start <
+2019-07-12 15:28:04.816470 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:28:04.930764 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:28:04.930786 ERROR: something went wrong
+2019-07-12 15:28:04.816269 : > test_1 start <
+2019-07-12 15:29:01.141328 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:29:01.200485 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:29:01.200509 ERROR: something went wrong
+2019-07-12 15:29:01.141103 : > test_1 start <
+2019-07-12 15:29:47.909854 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:29:47.963403 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:29:47.963426 ERROR: something went wrong
+2019-07-12 15:29:47.909645 : > test_1 start <
+2019-07-12 15:30:16.326027 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:30:16.379737 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:30:16.379784 ERROR: something went wrong
+2019-07-12 15:30:16.325805 : > test_1 start <
+2019-07-12 15:31:10.416636 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:31:10.471556 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:31:10.471652 ERROR: something went wrong
+2019-07-12 15:31:10.416426 : > test_1 start <
+2019-07-12 15:31:19.831624 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:31:19.885386 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:31:19.885502 ERROR: something went wrong
+2019-07-12 15:31:19.831414 : > test_1 start <
+2019-07-12 15:46:57.992213 : > test_1 start <
+2019-07-12 15:47:32.702199 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:47:32.757902 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:47:32.757950 LOG: playing ocean-wave-1.wav
+2019-07-12 15:47:32.757960 ERROR: something went wrong
+2019-07-12 15:47:32.701936 : > test_1 start <
+2019-07-12 15:53:50.536074 : > test_1 start <
+2019-07-12 15:59:09.269817 LOG: Request to play ocean-wave-1.wav
+2019-07-12 15:59:09.326337 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 15:59:09.326380 ERROR: something went wrong
+2019-07-12 15:59:09.269587 : > test_1 start <
+2019-07-12 16:00:12.756109 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:00:12.811258 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:00:12.811363 ERROR: something went wrong
+2019-07-12 16:00:12.755877 : > test_1 start <
+2019-07-12 16:12:21.590802 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:12:21.645493 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:12:21.645613 ERROR: something went wrong
+2019-07-12 16:12:21.590573 : > test_1 start <
+2019-07-12 16:48:14.120456 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:48:14.175518 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:48:14.175563 ERROR: something went wrong
+2019-07-12 16:48:14.120241 : > test_1 start <
+2019-07-12 16:48:29.042194 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:48:29.098350 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:48:29.098389 ERROR: something went wrong
+2019-07-12 16:48:29.041980 : > test_1 start <
+2019-07-12 16:49:15.281718 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:49:15.338177 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:49:15.338278 ERROR: something went wrong
+2019-07-12 16:49:15.281492 : > test_1 start <
+2019-07-12 16:49:25.651515 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:49:25.707115 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:49:25.707158 ERROR: something went wrong
+2019-07-12 16:49:25.651306 : > test_1 start <
+2019-07-12 16:52:32.010265 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:52:32.066537 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:52:32.066621 LOG: playing ocean-wave-1.wav
+2019-07-12 16:52:43.807527 LOG: user quit 
+=======================================
+2019-07-12 16:52:32.010023 : > test_1 start <
+2019-07-12 16:53:17.344192 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:53:17.398577 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:53:17.398762 LOG: playing ocean-wave-1.wav
+2019-07-12 16:53:21.207316 LOG: user quit 
+=======================================
+2019-07-12 16:53:17.343981 : > test_1 start <
+2019-07-12 16:53:25.554969 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:53:25.610012 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:53:25.610058 ERROR: something went wrong
+2019-07-12 16:53:25.554745 : > test_1 start <
+2019-07-12 16:53:43.138032 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:53:43.193258 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:53:43.193457 LOG: playing ocean-wave-1.wav
+2019-07-12 16:54:03.958914 LOG: user quit 
+=======================================
+2019-07-12 16:53:43.137762 : > test_1 start <
+2019-07-12 16:54:14.765397 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:54:14.820034 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:54:14.820217 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:2
+2019-07-12 16:54:17.007742 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-12 16:54:14.765166 : > test_1 start <
+2019-07-12 16:54:17.008059 : > test_1 success <
+=======================================
+2019-07-12 16:58:06.199225 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:58:06.255760 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:58:06.255828 LOG: playing ocean-wave-1.wav
+2019-07-12 16:58:06.255838 ERROR: something went wrong
+2019-07-12 16:58:06.198953 : > test_1 start <
+2019-07-12 16:59:17.176381 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:59:17.230238 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:59:17.230286 LOG: playing ocean-wave-1.wav
+2019-07-12 16:59:17.230301 ERROR: something went wrong
+2019-07-12 16:59:17.176177 : > test_1 start <
+2019-07-12 16:59:53.022022 LOG: Request to play ocean-wave-1.wav
+2019-07-12 16:59:53.076530 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 16:59:53.076714 LOG: playing ocean-wave-1.wav
+2019-07-12 16:59:53.076760 ERROR: something went wrong
+2019-07-12 16:59:53.021802 : > test_1 start <
+2019-07-12 17:00:14.425212 LOG: Request to play ocean-wave-1.wav
+2019-07-12 17:00:14.479057 LOG: data from ocean-wave-1.wav loaded
+2019-07-12 17:00:14.479217 LOG: playing ocean-wave-1.wav
+2019-07-12 17:00:14.479232 ERROR: something went wrong
+2019-07-12 17:00:14.425002 : > test_1 start <
+2019-07-12 17:02:54.731524 : > test_1 start <
+2019-07-15 09:30:58.395885 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:30:58.451372 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:30:58.451418 LOG: playing ocean-wave-1.wav
+2019-07-15 09:30:58.451428 ERROR: something went wrong
+2019-07-15 09:30:58.395653 : > test_1 start <
+2019-07-15 09:34:42.306210 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:34:42.361588 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:34:42.361749 LOG: playing ocean-wave-1.wav
+2019-07-15 09:34:42.361759 ERROR: something went wrong
+2019-07-15 09:34:42.305971 : > test_1 start <
+2019-07-15 09:43:11.406075 : > test_1 start <
+2019-07-15 09:45:08.730451 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:45:08.784636 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:45:08.784822 LOG: playing ocean-wave-1.wav
+2019-07-15 09:45:08.784834 ERROR: something went wrong
+2019-07-15 09:45:08.730243 : > test_1 start <
+2019-07-15 09:45:55.347518 : > test_1 start <
+2019-07-15 09:46:15.482516 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:46:15.536304 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:46:15.536477 LOG: playing ocean-wave-1.wav
+2019-07-15 09:46:15.536488 ERROR: something went wrong
+2019-07-15 09:46:15.482306 : > test_1 start <
+2019-07-15 09:47:05.307897 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:47:05.362062 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:47:05.362247 LOG: playing ocean-wave-1.wav
+2019-07-15 09:47:05.362259 ERROR: something went wrong
+2019-07-15 09:47:05.307687 : > test_1 start <
+2019-07-15 09:47:35.970085 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:47:36.024569 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:47:36.024640 LOG: playing ocean-wave-1.wav
+2019-07-15 09:47:36.024650 ERROR: something went wrong
+2019-07-15 09:47:35.969845 : > test_1 start <
+2019-07-15 09:48:37.472412 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:48:37.526209 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:48:37.526386 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:2
+2019-07-15 09:48:40.002104 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 09:48:37.472197 : > test_1 start <
+2019-07-15 09:48:40.002484 : > test_1 success <
+=======================================
+2019-07-15 09:48:55.482284 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:48:55.537767 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:48:55.537818 LOG: playing ocean-wave-1.wav
+2019-07-15 09:48:55.537822 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:48:55.537829 LOG: playing 2for ocean-wave-1.wav
+2019-07-15 09:49:54.864577 LOG: user quit 
+=======================================
+2019-07-15 09:48:55.482072 : > test_1 start <
+2019-07-15 09:50:52.251290 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:50:52.306741 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:50:52.306909 LOG: playing ocean-wave-1.wav
+2019-07-15 09:50:52.306915 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:50:52.306954 LOG: playing 2for ocean-wave-1.wav
+2019-07-15 09:51:40.206501 LOG: user quit 
+=======================================
+2019-07-15 09:50:52.251065 : > test_1 start <
+2019-07-15 09:52:04.877512 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:52:04.930775 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:52:04.930957 LOG: playing ocean-wave-1.wav
+2019-07-15 09:52:04.930964 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:52:04.931002 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:44
+2019-07-15 09:52:49.030214 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 09:52:04.877261 : > test_1 start <
+2019-07-15 09:52:49.031465 : > test_1 success <
+=======================================
+2019-07-15 09:53:36.381679 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:53:36.435226 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:53:36.435276 LOG: playing ocean-wave-1.wav
+2019-07-15 09:53:36.435280 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:53:36.435288 LOG: playing 2for ocean-wave-1.wav
+2019-07-15 09:54:29.157018 LOG: user quit 
+=======================================
+2019-07-15 09:53:36.381457 : > test_1 start <
+2019-07-15 09:56:05.639377 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:56:05.696436 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:56:05.696606 LOG: playing ocean-wave-1.wav
+2019-07-15 09:56:05.696612 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:56:05.696651 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:44
+2019-07-15 09:56:49.795834 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 09:56:05.639166 : > test_1 start <
+2019-07-15 09:56:49.796755 : > test_1 success <
+=======================================
+2019-07-15 09:58:11.374245 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:58:11.429385 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:58:11.429561 LOG: playing ocean-wave-1.wav
+2019-07-15 09:58:11.429568 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:58:11.429754 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:44
+2019-07-15 09:58:55.530810 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 09:58:11.374031 : > test_1 start <
+2019-07-15 09:58:55.531837 : > test_1 success <
+=======================================
+2019-07-15 09:59:02.319839 LOG: Request to play ocean-wave-1.wav
+2019-07-15 09:59:02.374421 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 09:59:02.374480 LOG: playing ocean-wave-1.wav
+2019-07-15 09:59:02.374484 LOG: user requested a 45 second(s) timer requested 
+2019-07-15 09:59:02.374496 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:44
+2019-07-15 09:59:46.476192 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 09:59:02.319622 : > test_1 start <
+2019-07-15 09:59:46.477124 : > test_1 success <
+=======================================
+2019-07-15 10:00:58.975535 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:00:59.031294 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:00:59.031580 LOG: playing ocean-wave-1.wav
+2019-07-15 10:00:59.031587 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:00:59.031598 LOG: playing 2for ocean-wave-1.wav
+2019-07-15 10:00:59.033264 ERROR: something went wrong
+2019-07-15 10:00:58.975326 : > test_1 start <
+2019-07-15 10:01:06.274816 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:01:06.329861 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:01:06.330043 LOG: playing ocean-wave-1.wav
+2019-07-15 10:01:06.330050 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:01:06.330095 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:44
+2019-07-15 10:01:50.431683 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:01:06.274607 : > test_1 start <
+2019-07-15 10:01:50.432238 : > test_1 success <
+=======================================
+2019-07-15 10:05:28.247719 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:05:28.302853 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:05:28.303041 LOG: playing ocean-wave-1.wav
+2019-07-15 10:05:28.303048 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:05:28.303088 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:06:17.392976 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:05:28.247510 : > test_1 start <
+2019-07-15 10:06:17.393314 : > test_1 success <
+=======================================
+2019-07-15 10:06:30.860157 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:06:30.914926 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:06:30.914990 LOG: playing ocean-wave-1.wav
+2019-07-15 10:06:30.914994 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:06:30.915057 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:07:20.005333 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:06:30.859947 : > test_1 start <
+2019-07-15 10:07:20.005710 : > test_1 success <
+=======================================
+2019-07-15 10:07:25.476072 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:07:25.530764 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:07:25.530833 LOG: playing ocean-wave-1.wav
+2019-07-15 10:07:25.530837 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:07:25.530848 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:08:14.628061 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:07:25.475863 : > test_1 start <
+2019-07-15 10:08:14.628636 : > test_1 success <
+=======================================
+2019-07-15 10:08:25.296053 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:08:25.355685 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:08:25.355865 LOG: playing ocean-wave-1.wav
+2019-07-15 10:08:25.355872 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:08:25.355911 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:09:14.445420 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:08:25.295774 : > test_1 start <
+2019-07-15 10:09:14.445905 : > test_1 success <
+=======================================
+2019-07-15 10:09:21.013826 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:09:21.071727 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:09:21.071780 LOG: playing ocean-wave-1.wav
+2019-07-15 10:09:21.071784 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:09:21.071792 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:10:10.162804 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:09:21.013597 : > test_1 start <
+2019-07-15 10:10:10.163261 : > test_1 success <
+=======================================
+2019-07-15 10:10:34.378953 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:10:34.436332 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:10:34.436400 LOG: playing ocean-wave-1.wav
+2019-07-15 10:10:34.436406 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:10:34.436419 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:11:23.526228 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:10:34.378709 : > test_1 start <
+2019-07-15 10:11:23.526672 : > test_1 success <
+=======================================
+2019-07-15 10:13:06.198777 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:13:06.258636 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:13:06.258829 LOG: playing ocean-wave-1.wav
+2019-07-15 10:13:06.258835 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:13:06.258874 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:13:55.349666 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:13:06.198533 : > test_1 start <
+2019-07-15 10:13:55.350059 : > test_1 success <
+=======================================
+2019-07-15 10:16:43.366665 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:16:43.424915 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:16:43.425095 LOG: playing ocean-wave-1.wav
+2019-07-15 10:16:43.425101 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:16:43.425140 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:17:32.514822 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:16:43.366437 : > test_1 start <
+2019-07-15 10:17:32.515381 : > test_1 success <
+=======================================
+2019-07-15 10:18:33.305356 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:18:33.363189 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:18:33.363239 LOG: playing ocean-wave-1.wav
+2019-07-15 10:18:33.363243 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:18:33.363252 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:19:22.452694 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:18:33.305125 : > test_1 start <
+2019-07-15 10:19:22.453241 : > test_1 success <
+=======================================
+2019-07-15 10:19:30.324402 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:19:30.386012 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:19:30.386186 LOG: playing ocean-wave-1.wav
+2019-07-15 10:19:30.386193 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:19:30.386233 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:20:19.479267 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:19:30.324178 : > test_1 start <
+2019-07-15 10:20:19.479791 : > test_1 success <
+=======================================
+2019-07-15 10:20:49.214678 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:20:49.273955 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:20:49.274022 LOG: playing ocean-wave-1.wav
+2019-07-15 10:20:49.274027 LOG: user requested a 49 second(s) timer requested 
+2019-07-15 10:20:49.274040 LOG: playing 2for ocean-wave-1.wav
+elapsed_time= 0:49
+2019-07-15 10:21:38.364332 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:20:49.214457 : > test_1 start <
+2019-07-15 10:21:38.364764 : > test_1 success <
+=======================================
+2019-07-15 10:22:31.557903 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:22:31.614008 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:22:31.614053 ERROR: something went wrong
+2019-07-15 10:22:31.557687 : > test_1 start <
+2019-07-15 10:26:38.781531 LOG: Request to play ocean-wave-1.wav
+2019-07-15 10:26:38.838583 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 10:26:38.838653 LOG: playing ocean-wave-1.wav
+2019-07-15 10:27:00.874346 LOG: blocking == True
+2019-07-15 10:27:00.874520 LOG: No timer requested, time elapsed = 0:22
+2019-07-15 10:27:00.874573 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 10:26:38.781266 : > test_1 start <
+2019-07-15 10:27:00.875709 : > test_1 success <
+=======================================
