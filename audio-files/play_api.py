@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("filename", help="audio file to be played back")
 parser.add_argument("-d", "--device", type=int, help="device ID")
 parser.add_argument("-t", "--time", type=int, help="duration of the sound")
+parser.add_argument("-path","--fpath",help = "path to log file")
 #parser.add_argument("-b", "--blockingmode", type=int, help="duration of the sound")
 args = parser.parse_args()
 #d= args.device
@@ -20,33 +21,28 @@ t = args.time
 
 def play_and_log_file():
 	time_start = datetime.datetime.now()
-	path = '/home/j.dittrick/Audio/audio-files/log.txt'
 	f_sound = sf.SoundFile(args.filename)
 	t_file_s = format(len(f_sound) / f_sound.samplerate)
 	t_file_f = float(t_file_s)	
 	t_file = int(t_file_f)
-
-	f = open(path,'a')
-	#f_r = open(path,'r')
-	f.write('\n' + str(datetime.datetime.now())+' LOG: '+ 'Request to play '+ args.filename +'\r')
+	logging.info(f'Request to play {args.filename}')
 	try:			
 		print("playing sound")		
 		data, fs = sf.read(args.filename, dtype='float32')
-		f.write('\n' + str(datetime.datetime.now())+' LOG: '+ 'data from '+args.filename+' loaded\r')
+		logging.info(f'data from {args.filename} loaded')
 		print("goes here")
 		blocking= (False if type(t) == int else True)
 		print(blocking)
 		#sd.play(data, fs, device= args.device, blocking= blocking)
 		print("playing sound 2")
-		f.write('\n' + str(datetime.datetime.now())+' LOG: '+ 'playing '+ args.filename)
-
+		logging.info(f'playing {args.filename}')
 		if blocking == False:
 			if t > t_file:
-				f.write('\n' + str(datetime.datetime.now())+' LOG: user requested a '+ str(t) +' second(s) timer requested \r')
+				logging.info(f'user requested {t} second timer')
 				#si temps demandé > temps du fichier calcule le nombre de fois que le fichier doit être joué
 				print("lqsfnq")
 				number_of_plays = t // t_file
-				f.write('\n' + str(datetime.datetime.now())+' LOG: '+ 'playing '+ str(number_of_plays)+'for '+args.filename)
+				logging.info(f'playing {args.filename} {number_of_plays} times')
 				while number_of_plays > 0:
 					sd.play(data, fs, device= args.device, blocking= True)
 					sd.stop()
@@ -55,6 +51,7 @@ def play_and_log_file():
 				t_2 = t%t_file
 				print("t_2= "+str(t_2))
 			else:
+				#sinon set un timer normal 
 				t_2 = t
 			sd.play(data, fs, device= args.device, blocking= blocking)	
 			t_start_2 = datetime.datetime.now()	
@@ -64,7 +61,7 @@ def play_and_log_file():
 				i=0
 		else:
 			sd.play(data, fs, device= args.device, blocking= blocking)
-			f.write('\n' + str(datetime.datetime.now())+' LOG: blocking == True\r')
+			logging.info('blocking == True')
 
 		print("music stop")
 		sd.stop()
@@ -72,25 +69,20 @@ def play_and_log_file():
 
 		print("elapsed_time= "+str(int(elapsed_time//60))+':'+str(int(elapsed_time%60))+'\r')
 		if blocking:
-			f.write('\n'+ str(datetime.datetime.now()) +' LOG: No timer requested, time elapsed = '+str(int(elapsed_time//60))+':'+str(int(elapsed_time%60))+'\r')
+			logging.info('no timer requested, time elapsed = ' + str(int(elapsed_time//60))+':'+str(int(elapsed_time%60)))
 		else:
-			f.write('\n'+"elapsed_time= "+str(int(elapsed_time//60))+':'+str(int(elapsed_time%60))+'\r')
-
+			logging.info('elapsed time= '+ str(int(elapsed_time//60))+':'+str(int(elapsed_time%60)))
 		status = sd.get_status()
 		if status:
 			logging.warning(str(status))
 	except KeyboardInterrupt:
-		f.write('\n' + str(datetime.datetime.now())+' LOG: user quit \r')
-		f.write('\n=======================================\r')
+		logging.error('user quit')
+		logging.info('=======================================')
 		parser.exit('\nInterrupted by user')
 	except Exception as e:
-		f.write('\n' + str(datetime.datetime.now())+' ERROR: something went wrong\r')
 		parser.exit(type(e).__name__ + ': ' + str(e))
 	print("stop playing sound")
 	print("write file ?")
-	
-	f.write('\n' + str(datetime.datetime.now())+' LOG: Finished playing '+ args.filename+'\r')
-	f.write('\n=======================================\r')
-	f.close()
+	logging.info(f'Finished playing {args.filename}')
+	logging.info('=======================================')
 	return 
-
