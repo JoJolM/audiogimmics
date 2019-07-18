@@ -8,7 +8,6 @@ import logging
 import datetime
 import sounddevice as sd
 import soundfile as sf
-import Process
 
 # définition des arguments qui devront être parsé ie: le temps, les device,
 parser = argparse.ArgumentParser(description=__doc__)
@@ -27,32 +26,41 @@ b_path = args.fpath
 if b_path != None:
 	if os.path.isdir(b_path):
 		# si le path existe regarde si un fichier log existe 
+		
 		if os.path.isfile(b_path+'audio.log'):
-			#si il existe il paramettre le path à utiliser pour lire le fichier
 			path = b_path+'audio.log'
 		else:
-			# et sinon un nouveau fichier est créé et le path est paramétré 
 			f=open('audio.log','+w')
 			f.close()
 			path = b_path+'audio.log'
+			# et sinon un nouveau fichier est créé et le path est paramétré 
+		active = True
 
-	else :
-		# si l'input n'est pas un path alors retourne une erreur et quitte le programme
-		logging.error('Input is not dir')
-		quit()
-else: 
-	# si l'input path est vide alors   
-	if os.path.isfile('/home/j.dittrick/log/audio.log'):
-		#si un log existe paramettre le path par défaut
-		path = '/home/j.dittrick/log/audio.log'
+	elif os.path.isfile(b_path):
+		#si il existe il paramettre le path à utiliser pour lire le fichier
+		active = True
+		path = b_path
 	else:
-		# et sinon créé le log et paramettre le path par défaut 
-		f = open('audio.log','+w')
-		f.close()
-		path = '/home/j.dittrick/log/audio.log'
-print(path)
+		logging.error('Input invalid')
+		quit()
+		
+	logging.basicConfig(level=logging.DEBUG,filename= path,
+						format= '%(asctime)s %(levelname)s : %(message)s')
+	print(path)
+else: 
+	active = False
 
-logging.basicConfig(level=logging.DEBUG,filename= path,format= '%(asctime)s %(levelname)s : %(message)s')
+#stockage de si l'utilisateur a niput un dir	
+cwd = os.getcwd()
+if os.path.isfile(cwd+'active.value'):	
+	f= open('active.value','w+')
+	f.write(str(active))
+else:
+	f= open('active.value','w')
+	f.write(str(active))
+print('active_1= '+str(active))
+f.close()
+#logging.basicConfig(level=logging.DEBUG,filename= path,format= '%(asctime)s %(levelname)s : %(message)s')
 def check(s):	
 	f= open(path, 'r')
 	f_read= f.read()
@@ -71,18 +79,29 @@ def check(s):
 
 def test_1():
 	logging.info('test_1 started')
-	play_api.play_and_log_file()
+	play_api._play_()
 	print("does smthn")
 	check_1 = check("Finished")
 	print(str(check_1))
 	if check_1:
 		print("test_1 exit success")
-		logging.info('test_1 success exit')
-		return logging.info('=======================================')
+		play_api.j_log('info','test_1 success exit')
+		print('active : '+ str(active))
+		return play_api.j_log('info','=======================================')
 	else: 
 		print("test_1 exit fail")
-		logging.info('test_1 fail exit')
-		return  logging.info('=======================================')
+		play_api.j_log('info','test_1 fail exit')
+		print('active : '+ str(active))
+		return  play_api.j_log('info','=======================================')
+
+def test_log():
+	play_api.j_log('info',f'info {t} success')
+	play_api.j_log('error','error success')
+	play_api.j_log('warning','warning success')
+	play_api.j_log('info','info')
+
+
 
 test_1()
+
 parser.exit()

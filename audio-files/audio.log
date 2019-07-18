@@ -1,0 +1,87 @@
+2019-07-18 14:25:07,078 INFO : test_1 started
+2019-07-18 14:25:07,078 INFO : Request to play ocean-wave-1.wav
+2019-07-18 14:25:07,133 INFO : data from ocean-wave-1.wav loaded
+2019-07-18 14:25:07,134 INFO : playing ocean-wave-1.wav
+2019-07-18 14:25:12,154 INFO : elapsed time= 0:5
+2019-07-18 14:25:12,154 INFO : Finished playing ocean-wave-1.wav
+2019-07-18 14:25:12,155 INFO : =======================================
+2019-07-18 14:25:12,155 INFO : test_1 success exit
+2019-07-18 14:25:12,155 INFO : =======================================
+2019-07-18 14:27:52,722 INFO : test_1 started
+2019-07-18 14:27:52,723 INFO : Request to play ocean-wave-1.wav
+2019-07-18 14:27:52,777 INFO : data from ocean-wave-1.wav loaded
+2019-07-18 14:27:52,778 INFO : playing ocean-wave-1.wav
+2019-07-18 14:27:57,797 INFO : elapsed time= 0:5
+2019-07-18 14:27:57,797 INFO : Finished playing ocean-wave-1.wav
+2019-07-18 14:27:57,797 INFO : =======================================
+2019-07-18 14:27:57,798 INFO : test_1 success exit
+2019-07-18 14:27:57,798 INFO : =======================================
+2019-07-18 14:28:45,434 INFO : test_1 started
+2019-07-18 14:28:45,434 INFO : Request to play ocean-wave-1.wav
+2019-07-18 14:28:45,488 INFO : data from ocean-wave-1.wav loaded
+2019-07-18 14:28:45,489 INFO : playing ocean-wave-1.wav
+2019-07-18 14:28:50,508 INFO : elapsed time= 0:5
+2019-07-18 14:28:50,508 INFO : Finished playing ocean-wave-1.wav
+2019-07-18 14:28:50,508 INFO : =======================================
+2019-07-18 14:28:50,508 INFO : test_1 success exit
+2019-07-18 14:29:17,625 INFO : test_1 started
+2019-07-18 14:29:17,626 INFO : Request to play ocean-wave-1.wav
+2019-07-18 14:29:17,680 INFO : data from ocean-wave-1.wav loaded
+2019-07-18 14:29:17,680 INFO : playing ocean-wave-1.wav
+2019-07-18 14:29:22,700 INFO : elapsed time= 0:5
+2019-07-18 14:29:22,700 INFO : Finished playing ocean-wave-1.wav
+2019-07-18 14:29:22,700 INFO : =======================================
+2019-07-18 14:29:22,701 INFO : test_1 success exit
+2019-07-18 14:29:22,701 INFO : =======================================
+2019-07-18 14:43:42,438 INFO : info success
+2019-07-18 14:43:42,438 ERROR : error success
+2019-07-18 14:43:42,438 WARNING : warning success
+2019-07-18 14:48:23,369 INFO : info 5 success
+2019-07-18 14:48:23,369 ERROR : error success
+2019-07-18 14:48:23,369 WARNING : warning success
+2019-07-18 14:49:52,867 INFO : info 5 success
+2019-07-18 14:49:52,867 ERROR : error success
+2019-07-18 14:49:52,867 WARNING : warning success
+2019-07-18 15:03:56,424 INFO : info 5 success
+2019-07-18 15:03:56,425 ERROR : error success
+2019-07-18 15:03:56,425 WARNING : warning success
+2019-07-18 15:05:55,973 INFO : info 5 success
+2019-07-18 15:05:55,973 ERROR : error success
+2019-07-18 15:05:55,973 WARNING : warning success
+2019-07-18 15:24:25,197 INFO : info 5 success
+2019-07-18 15:24:25,197 ERROR : error success
+2019-07-18 15:24:25,197 WARNING : warning success
+2019-07-18 15:24:51,757 INFO : info 5 success
+2019-07-18 15:24:51,757 ERROR : error success
+2019-07-18 15:24:51,758 WARNING : warning success
+2019-07-18 15:27:05,875 INFO : info 5 success
+2019-07-18 15:27:05,875 ERROR : error success
+2019-07-18 15:27:05,875 WARNING : warning success
+2019-07-18 15:27:05,875 INFO : info
+2019-07-18 15:36:53,952 INFO : info 5 success
+2019-07-18 15:36:53,952 ERROR : error success
+2019-07-18 15:36:53,952 WARNING : warning success
+2019-07-18 15:36:53,952 INFO : info
+2019-07-18 15:38:16,855 INFO : info 5 success
+2019-07-18 15:38:16,855 ERROR : error success
+2019-07-18 15:38:16,855 WARNING : warning success
+2019-07-18 15:38:16,855 INFO : info
+2019-07-18 16:04:06,339 INFO : test_1 started
+2019-07-18 16:04:46,505 INFO : test_1 started
+2019-07-18 16:04:46,505 INFO : Request to play ocean-wave-1.wav
+2019-07-18 16:04:46,558 INFO : data from ocean-wave-1.wav loaded
+2019-07-18 16:04:46,558 INFO : playing ocean-wave-1.wav
+2019-07-18 16:04:51,578 INFO : elapsed time= 0:5
+2019-07-18 16:04:51,579 INFO : Finished playing ocean-wave-1.wav
+2019-07-18 16:04:51,579 INFO : =======================================
+2019-07-18 16:04:51,579 INFO : test_1 success exit
+2019-07-18 16:04:51,579 INFO : =======================================
+2019-07-18 16:12:11,103 INFO : test_1 started
+2019-07-18 16:12:11,103 INFO : Request to play ocean-wave-1.wav
+2019-07-18 16:12:11,159 INFO : data from ocean-wave-1.wav loaded
+2019-07-18 16:12:11,160 INFO : playing ocean-wave-1.wav
+2019-07-18 16:12:16,179 INFO : elapsed time= 0:5
+2019-07-18 16:12:16,180 INFO : Finished playing ocean-wave-1.wav
+2019-07-18 16:12:16,180 INFO : =======================================
+2019-07-18 16:12:16,180 INFO : test_1 success exit
+2019-07-18 16:12:16,180 INFO : =======================================

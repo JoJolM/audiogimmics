@@ -19,30 +19,33 @@ t = args.time
 #blocking_mode = args.blockingmode
 #print("blocking_mode= "str(blocking_mode))
 
-def play_and_log_file():
+
+
+
+def _play_():
 	time_start = datetime.datetime.now()
 	f_sound = sf.SoundFile(args.filename)
 	t_file_s = format(len(f_sound) / f_sound.samplerate)
 	t_file_f = float(t_file_s)	
 	t_file = int(t_file_f)
-	logging.info(f'Request to play {args.filename}')
+	j_log('info',f'Request to play {args.filename}')
 	try:			
 		print("playing sound")		
 		data, fs = sf.read(args.filename, dtype='float32')
-		logging.info(f'data from {args.filename} loaded')
+		j_log('info',f'data from {args.filename} loaded')
 		print("goes here")
 		blocking= (False if type(t) == int else True)
 		print(blocking)
 		#sd.play(data, fs, device= args.device, blocking= blocking)
 		print("playing sound 2")
-		logging.info(f'playing {args.filename}')
+		j_log('info',f'playing {args.filename}')
 		if blocking == False:
 			if t > t_file:
-				logging.info(f'user requested {t} second timer')
+				j_log(info,f'user requested {t} second timer')
 				#si temps demandé > temps du fichier calcule le nombre de fois que le fichier doit être joué
 				print("lqsfnq")
 				number_of_plays = t // t_file
-				logging.info(f'playing {args.filename} {number_of_plays} times')
+				j_log('info',f'playing {args.filename} {number_of_plays} times')
 				while number_of_plays > 0:
 					sd.play(data, fs, device= args.device, blocking= True)
 					sd.stop()
@@ -69,20 +72,39 @@ def play_and_log_file():
 
 		print("elapsed_time= "+str(int(elapsed_time//60))+':'+str(int(elapsed_time%60))+'\r')
 		if blocking:
-			logging.info('no timer requested, time elapsed = ' + str(int(elapsed_time//60))+':'+str(int(elapsed_time%60)))
+			j_log('info','no timer requested, time elapsed = ' + str(int(elapsed_time//60))+':'+str(int(elapsed_time%60)))
 		else:
-			logging.info('elapsed time= '+ str(int(elapsed_time//60))+':'+str(int(elapsed_time%60)))
+			j_log('info','elapsed time= '+ str(int(elapsed_time//60))+':'+str(int(elapsed_time%60)))
 		status = sd.get_status()
 		if status:
-			logging.warning(str(status))
+			j_log('info',warning(str(status)))
 	except KeyboardInterrupt:
-		logging.error('user quit')
-		logging.info('=======================================')
+		j_log('error','user quit')
+		j_log('info','=======================================')
 		parser.exit('\nInterrupted by user')
 	except Exception as e:
 		parser.exit(type(e).__name__ + ': ' + str(e))
 	print("stop playing sound")
 	print("write file ?")
-	logging.info(f'Finished playing {args.filename}')
-	logging.info('=======================================')
+	j_log('info',f'Finished playing {args.filename}')
+	j_log('info','=======================================')
 	return 
+
+def j_log(typ,s):
+	z = open('active.value','r')
+	zr = z.read()
+	z_t  = zr.split()
+	if z_t[0] == 'True':
+		active = True
+	else :
+		active = False
+	print('active_2= '+str(active))
+	if active :
+		if typ == 'info':
+			return logging.info(s)
+		if typ == 'error':
+			return logging.error(s)
+		if typ == 'warning':
+			return logging.warning(s)
+	else:
+		return 
