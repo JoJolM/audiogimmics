@@ -1,8 +1,8 @@
 #! /usr/bin/python3
 
 import argparse
-import logging
 import datetime
+from logger_j import j_log 
 import sounddevice as sd
 import soundfile as sf
 
@@ -64,7 +64,7 @@ def _play_():
 				i=0
 		else:
 			sd.play(data, fs, device= args.device, blocking= blocking)
-			logging.info('blocking == True')
+			j_log('info','blocking == True')
 
 		print("music stop")
 		sd.stop()
@@ -90,21 +90,3 @@ def _play_():
 	j_log('info','=======================================')
 	return 
 
-def j_log(typ,s):
-	z = open('active.value','r')
-	zr = z.read()
-	z_t  = zr.split()
-	if z_t[0] == 'True':
-		active = True
-	else :
-		active = False
-	print('active_2= '+str(active))
-	if active :
-		if typ == 'info':
-			return logging.info(s)
-		if typ == 'error':
-			return logging.error(s)
-		if typ == 'warning':
-			return logging.warning(s)
-	else:
-		return 
