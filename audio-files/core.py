@@ -6,7 +6,8 @@ import play_api
 import argparse
 import logging
 import datetime
-from logger_j import j_log
+import lib_report
+from logger_j import j_log, check
 import sounddevice as sd
 import soundfile as sf
 
@@ -55,37 +56,24 @@ else:
 cwd = os.getcwd()
 if os.path.isfile(cwd+'active.value'):	
 	f= open('active.value','w+')
-	f.write(str(active))
+	f.write(str(active)+'\r')
+	f.write('\n'+str(path))
 else:
 	f= open('active.value','w')
-	f.write(str(active))
+	f.write(str(active)+'\r')
+	f.write('\n'+str(path))
 print('active_1= '+str(active))
 f.close()
 #logging.basicConfig(level=logging.DEBUG,filename= path,format= '%(asctime)s %(levelname)s : %(message)s')
-def check(s):
-	if active:
-		f= open(path, 'r')
-		f_read= f.read()
-		f2_r= f_read.split()
-		i = len(f2_r) -1 
-		while True:
 
-			if f2_r[i] == s:
-				f.close()
-				return True
-			elif f2_r[i] == "=======================================" and i != len(f2_r) -1:
-				f.close()
-				return False
-			i-=1
-	else:
-		return 
 
 def test_1():
 	j_log('info','test_1 started')
 	play_api._play_()
 	print("does smthn")
 	check_1 = check("Finished")
-	print(str(check_1))
+	lib_report.report('test_1',args.filename)
+	print("check_1: "+str(check_1))
 	if check_1:
 		print("test_1 exit success")
 		j_log('info','test_1 success exit')
