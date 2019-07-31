@@ -6,6 +6,7 @@ from logger_j import j_log
 import sounddevice as sd
 import soundfile as sf
 
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("filename", help="audio file to be played back")
 parser.add_argument("-d", "--device", type=int, help="device ID")
@@ -22,7 +23,8 @@ t = args.time
 
 
 
-def _play_():
+def _play_(d):
+
 	time_start = datetime.datetime.now()
 	f_sound = sf.SoundFile(args.filename)
 	t_file_s = format(len(f_sound) / f_sound.samplerate)
@@ -38,7 +40,7 @@ def _play_():
 		print(blocking)
 		#sd.play(data, fs, device= args.device, blocking= blocking)
 		print("playing sound 2")
-		j_log('info',f'playing {args.filename}')
+		j_log('info',f'playing {args.filename} to device {d}')
 		if blocking == False:
 			if t > t_file:
 				j_log(info,f'user requested {t} second timer')
@@ -47,23 +49,28 @@ def _play_():
 				number_of_plays = t // t_file
 				j_log('info',f'playing {args.filename} {number_of_plays} times')
 				while number_of_plays > 0:
-					sd.play(data, fs, device= args.device, blocking= True)
+					sd.play(data, fs, device= d, blocking= True)
 					sd.stop()
 					number_of_plays -= 1
 				#sortie de boucle cacule le temps restant
 				t_2 = t%t_file
 				print("t_2= "+str(t_2))
+			
 			else:
 				#sinon set un timer normal 
 				t_2 = t
-			sd.play(data, fs, device= args.device, blocking= blocking)	
+				if type(d) == list:
+					for i in d:
+						sd.play(data, fs, device= i, blocking= blocking)
+				else:
+					sd.play(data, fs, device= d, blocking= blocking)	
 			t_start_2 = datetime.datetime.now()	
 			
 			while (datetime.datetime.now() - t_start_2).total_seconds() < t_2:
-				print("elapsed_time= "+str((datetime.datetime.now()- t_start_2).total_seconds()))
+				#print("elapsed_time= "+str((datetime.datetime.now()- t_start_2).total_seconds()))
 				i=0
 		else:
-			sd.play(data, fs, device= args.device, blocking= blocking)
+			sd.play(data, fs, device= d, blocking= blocking)
 			j_log('info','blocking == True')
 
 		print("music stop")
@@ -81,12 +88,19 @@ def _play_():
 	except KeyboardInterrupt:
 		j_log('error','user quit')
 		j_log('info','=======================================')
-		parser.exit('\nInterrupted by user')
+		return 
+		#parser.exit('\nInterrupted by user')
 	except Exception as e:
 		parser.exit(type(e).__name__ + ': ' + str(e))
+		return
 	print("stop playing sound")
 	print("write file ?")
 	j_log('info',f'Finished playing {args.filename}')
 	j_log('info','=======================================')
 	return 
 
+def __play_mult__():
+	print('in __play_mult__')
+	data, fs = sf.read(args.filename, dtype='float32')
+	sd.OutputStream(fs)
+	return
