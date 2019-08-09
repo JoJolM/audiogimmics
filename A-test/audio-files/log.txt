@@ -1,0 +1,62 @@
+
+2019-07-15 11:59:51.891053 LOG: Request to play ocean-wave-1.wav
+2019-07-15 11:59:51.947360 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 11:59:51.947406 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 11:59:56.972984 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 11:59:51.890673 : > test_1 start <
+2019-07-15 11:59:56.973207 : > test_1 success <
+=======================================
+2019-07-15 14:19:46.300408 LOG: Request to play ocean-wave-1.wav
+2019-07-15 14:19:46.357393 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 14:19:46.357577 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 14:19:51.377419 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 14:19:46.300049 : > test_1 start <
+2019-07-15 14:19:51.379326 : > test_1 success <
+=======================================
+2019-07-15 14:53:21.495367 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 14:53:21.495537 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 14:53:26.514783 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 14:53:21.439133 : > test_1 start <
+2019-07-15 14:53:26.515048 : > test_1 success <
+=======================================
+2019-07-15 14:54:28.558713 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 14:54:28.558920 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 14:54:33.578211 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 14:54:28.502624 : > test_1 start <
+2019-07-15 14:54:33.578499 : > test_1 success <
+=======================================
+2019-07-15 15:00:58.840950 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:00:58.841294 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 15:01:03.860476 LOG: Finished playing ocean-wave-1.wav
+=======================================
+2019-07-15 15:03:00.699377 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:03:00.699601 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 15:03:05.719621 LOG: Finished playing ocean-wave-1.wav
+2019-07-15 15:03:43.767414 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:03:43.767693 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 15:03:48.787269 LOG: Finished playing ocean-wave-1.wav
+2019-07-15 15:04:30.504670 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:04:30.504894 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 15:04:35.530961 LOG: Finished playing ocean-wave-1.wav
+2019-07-15 15:04:55.093074 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:04:55.093333 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 15:05:00.112462 LOG: Finished playing ocean-wave-1.wav
+2019-07-15 15:09:36.399911 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:09:36.400474 LOG: playing ocean-wave-1.wav
+elapsed_time= 0:5
+2019-07-15 15:09:41.420978 LOG: Finished playing ocean-wave-1.wav
+2019-07-15 15:19:15.738065 LOG: data from ocean-wave-1.wav loaded
+2019-07-15 15:20:32.484457 LOG: data from ocean-wave-1.wav loaded

@@ -1,0 +1,7 @@
+2019-08-07 11:08:14,172 INFO : test_1 started
+2019-08-07 11:08:14,173 INFO : Request to play ocean-wave-1.wav
+2019-08-07 11:08:14,236 INFO : data from ocean-wave-1.wav loaded
+2019-08-07 11:08:14,236 INFO : playing ocean-wave-1.wav to device 9
+2019-08-07 11:08:19,240 INFO : elapsed time= 0:5
+2019-08-07 11:08:19,240 INFO : Finished playing ocean-wave-1.wav
+2019-08-07 11:08:19,242 INFO : =======================================

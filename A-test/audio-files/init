@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+
+echo "packet contenant la fonction pour jouer des fichiers sons"
