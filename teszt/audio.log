@@ -1,0 +1,47 @@
+2019-08-14 11:40:17,350 INFO : test_1 started
+2019-08-14 11:40:17,350 INFO : Request to play ocean-wave-1.wav
+2019-08-14 11:40:17,438 INFO : data from ocean-wave-1.wav loaded
+2019-08-14 11:40:17,438 INFO : playing ocean-wave-1.wav to device 9
+2019-08-14 11:40:22,442 INFO : elapsed time= 0:5
+2019-08-14 11:40:22,442 INFO : Finished playing ocean-wave-1.wav
+2019-08-14 11:40:22,444 INFO : =======================================
+2019-08-14 11:40:22,444 INFO : test_1 success exit
+2019-08-14 11:40:22,444 INFO : =======================================
+2019-08-14 11:42:24,140 INFO : test_1 started
+2019-08-14 11:42:24,140 INFO : Request to play ocean-wave-1.wav
+2019-08-14 11:42:24,226 INFO : data from ocean-wave-1.wav loaded
+2019-08-14 11:42:24,227 INFO : playing ocean-wave-1.wav to device 9
+2019-08-14 11:42:29,230 INFO : elapsed time= 0:5
+2019-08-14 11:42:29,231 INFO : Finished playing ocean-wave-1.wav
+2019-08-14 11:42:29,233 INFO : =======================================
+2019-08-14 11:42:29,233 INFO : test_1 success exit
+2019-08-14 11:42:29,234 INFO : =======================================
+2019-08-14 14:03:10,275 INFO : test_1 started
+2019-08-14 14:03:10,275 INFO : Request to play ocean-wave-1.wav
+2019-08-14 14:03:10,363 INFO : data from ocean-wave-1.wav loaded
+2019-08-14 14:03:10,363 INFO : playing ocean-wave-1.wav to device 9
+2019-08-14 14:03:15,367 INFO : elapsed time= 0:5
+2019-08-14 14:03:15,367 INFO : Finished playing ocean-wave-1.wav
+2019-08-14 14:03:15,367 INFO : =======================================
+2019-08-14 14:03:15,367 INFO : test_1 success exit
+2019-08-14 14:03:15,367 INFO : =======================================
+2019-08-14 14:03:22,864 INFO : test_1 started
+2019-08-14 14:03:22,864 INFO : Request to play ocean-wave-1.wav
+2019-08-14 14:03:22,951 INFO : data from ocean-wave-1.wav loaded
+2019-08-14 14:03:22,951 INFO : playing ocean-wave-1.wav to device 9
+2019-08-14 14:03:44,986 INFO : blocking == True
+2019-08-14 14:03:44,986 INFO : no timer requested, time elapsed = 0:22
+2019-08-14 14:03:44,987 INFO : Finished playing ocean-wave-1.wav
+2019-08-14 14:03:44,987 INFO : =======================================
+2019-08-14 14:03:44,987 INFO : test_1 success exit
+2019-08-14 14:03:44,987 INFO : =======================================
+2019-08-14 14:36:23,814 INFO : test_1 started
+2019-08-14 14:36:23,814 INFO : Request to play ocean-wave-1.wav
+2019-08-14 14:36:23,901 INFO : data from ocean-wave-1.wav loaded
+2019-08-14 14:36:23,901 INFO : playing ocean-wave-1.wav to device 9
+2019-08-14 14:36:45,937 INFO : blocking == True
+2019-08-14 14:36:45,937 INFO : no timer requested, time elapsed = 0:22
+2019-08-14 14:36:45,937 INFO : Finished playing ocean-wave-1.wav
+2019-08-14 14:36:45,937 INFO : =======================================
+2019-08-14 14:36:45,938 INFO : test_1 success exit
+2019-08-14 14:36:45,939 INFO : =======================================
